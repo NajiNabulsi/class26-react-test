@@ -1,9 +1,9 @@
 import React from "react";
 
-function UserList({ src, firstName, lastName }) {
+function UserList({ src, firstName, lastName, onclick }) {
   return (
-    <div className="card">
-      <img src={src} alt="friend" />
+    <div className="card" onClick={onclick}>
+      <img src={src} alt={firstName} />
       <p>
         {firstName} {lastName}
       </p>
